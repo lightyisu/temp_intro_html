@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @font-face {
+            font-family: 'Marlyn','Helvetica' ;
+            src: url(./font/PerfectMoment-Script.ttf);
+            font-display: swap;
+        }
+        body{
+            background: url('./images/homebg.png');
+            background-size: contain;
+            padding: 0;
+            margin: 0;
+            
+        }
+        .logo{
+            margin: 0 70px;
+        }
+        nav{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .categories{
+            width: 1300px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+        }
+        .item{
+            margin: 30px 70px;
+        }
+        .title{
+            text-align: center;
+        }
+        .itemimg{
+            border-radius: 15px;
+        }
+        .slogan{
+            margin: 30px 0 80px 0;
+            text-align: center;
+        }
+        header{
+            background-color: #012169;
+            height: 90px;
+            text-align: center;
+            line-height: 90px;
+            color: #fff;
+            font-size: 60px;
+            font-family: 'Marlyn';
+            box-shadow: 6px 6px 5px #d0d8e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Wzh's &nbsp;  Workshop
+    </header>
+    <div>
+      <!-- <nav>
+            <img data-src="./images/workshop.png" width="300px"/>
+        </nav>-->
+        <div class="logo">
+           <img data-src="./images/homelogo.png" width="200px"/>
+        </div>
+        <div class="categories">
+            <div class="item">
+                <a href="./puzzle.html">
+
+             
+                <img class="itemimg" src="./images/pz.jpg" width="200px" height="200px"/>
+                <p class="title">
+                    <img data-src="./images/Puzzles.png" width="80px"/>
+                </p>
+            </a>
+            </div>
+            <div class="item">
+                <a href="./models.html">
+
+
+                <img class="itemimg" src="./images/manu.jpg" width="200px" height="200px"/>
+                <p class="title">
+                    <img data-src="./images/Models.png" width="80px"/>
+                </p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="./clay.html">
+                <img class="itemimg" src="./images/flo.jpg" width="200px" height="200px"/>
+                <p class="title">
+                    <img data-src="./images/Clay.png" width="50px"/>
+                </p>
+            </a>
+            </div>
+     
+            <div class="item">
+                <a href="./chemlab.html">
+                <img class="itemimg" src="./images/dim.jpg" width="200px" height="200px"/>
+                <p class="title">
+                    <img data-src="./images/Chem Lab.png" width="90px"/>
+                </p>
+                </a>
+
+            </div>
+            <div class="item">
+                <a href="./collection.html">
+                <img  class="itemimg" src="./images/ww.jpg" width="200px" height="200px"/>
+                <p class="title">
+                    <img data-src="./images/Collection.png" width="98px"/>
+                </p>
+            </a>
+            </div>
+            <div class="item">
+                <a href="./talk.html">
+                
+                <img  class="itemimg" src="./images/pt1.png" width="200px" height="200px"/>
+                <p class="title">
+                    <img data-src="./images/Private-Talk.png" width="128px"/>
+                </p>
+                    
+            </a>
+            </div>
+         
+     
+
+        </div>
+        <div class="slogan">
+              <img  width="700px" id="sloganimg" src="./images/slogan.png"/>  
+        </div>
+    </div>
+    <script src="./js/lazyload.js"/>
+    <script>
+        let state=1;
+        function changeslogan(){
+            let sloganimg=document.querySelector('#sloganimg')
+            
+            setInterval(()=>{
+                if(state){
+                    sloganimg.src='./images/slogan_blue.png';
+                    state=!state;
+                }else{
+                    sloganimg.src='./images/slogan.png';
+                    state=!state;
+                }
+         
+            },2000)
+        }
+        changeslogan()
+
+</script>
+
+
+</body>
+</html>
